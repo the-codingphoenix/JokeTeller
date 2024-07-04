@@ -7,41 +7,44 @@
 }
 
 :root {
-    --white: #fff;
-    --bg-color: #151515;
-    --primary-color: #a91d3a;
-    --secondary-color: #C73659;
-    --text-color:#EEEEEE;
+    --white: rgb(255, 255, 255);
+    --bg-color: rgb(21, 21, 21);
+    --primary-color: rgb(169, 25, 58);
+    --secondary-color: rgb(199, 54, 89);
+    --text-color: rgb(238, 238, 238);
 }
 
 body {
     background: var(--white);
+    overflow: hidden;
 }
 
 .container {
-    height: 100vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzFpdWs3dnJlM2VqdTVvbWhrZzRsN3FvOWw2dGpqb2FnZ2Y3dXRmciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WwqLMEY4yJ7af3O00K/giphy.webp');
+    background: url('./robot.gif#191919');
     background-size: contain;
-    background-position: left center;
     background-repeat: no-repeat;
 }
+
 
 button {
     cursor: pointer;
     outline: none;
-    width: 200px;
-    height: 50px;
+    padding: 10px 15px;
     font-family: Montserrat, sans-serif;
-    font-weight: 600;
-    background: var(--secondary-color);
+    font-weight: 700;
+    background: rgb(199, 54, 88);
+    color: var(--bg-color);
+    font-size: 1rem;
+    letter-spacing: 2px;
     border: none;
     border-radius: 10px;
-    box-shadow: 2px 2px 20px 10px var(--bg-color);
+    box-shadow: 2px 2px 20px 10px rgba(21, 21, 21, 0.6);
 }
 
 button:hover {
@@ -64,6 +67,7 @@ button:disabled {
         background-size: cover;
     }
     button {
-        box-shadow: 5px 5px 30px 20px var(--bg-color);
+        box-shadow: 5px 5px 30px 15px rgba(21, 21, 21, 0.796);
+        margin-top: 30%;
     }
 }
