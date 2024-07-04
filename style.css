@@ -26,8 +26,9 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: url('./robot.gif#191919');
+    background: url('./robot.gif');
     background-size: contain;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -68,6 +69,6 @@ button:disabled {
     }
     button {
         box-shadow: 5px 5px 30px 15px rgba(21, 21, 21, 0.796);
-        margin-top: 30%;
+        margin-top: 5%;
     }
 }
