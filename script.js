@@ -25,7 +25,7 @@ function tellMe(joke) {
 // Asynchronous function to fetch jokes from the Joke API
 async function getJokes() {
     let joke = ''; // Variable to store the joke
-    const apiUrl = 'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit'; // URL of the Joke API
+    const apiUrl = 'https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit'; // URL of the Joke API
     try {
         const response = await fetch(apiUrl); // Fetch data from the API
         const data = await response.json(); // Convert response to JSON
